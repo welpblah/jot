@@ -1,0 +1,187 @@
+@font-face {
+	font-family: "triplicate";
+	src: url("../public/fonts/triplicate_t4_regular-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "triplicate";
+	src: url("../public/fonts/triplicate_t4_italic-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "triplicate";
+	src: url("../public/fonts/triplicate_t4_bold-webfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "triplicate";
+	src: url("../public/fonts/triplicate_t4_bold_italic-webfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
+}
+
+* {
+	font-family: "triplicate", monospace;
+}
+
+body {
+	background-color: #8b0055;
+	max-width: 60rem;
+	color: #ffd9b2;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+	padding: 0.4rem 0 2rem 0;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill,
+			minmax(260px, 1fr));
+}
+
+textarea {
+	resize: none;
+	line-height: 1.3;
+	padding: 0.4rem 0.6rem;
+	background: #FFEFD6;
+	border-radius: 12px;
+	border: 4px dotted #FFC182;
+	color: #582D1D;
+}
+
+textarea:focus {
+	outline: none;
+	border: 4px solid #FFC182;
+}
+
+.add {
+	padding: 2px 4px;
+	background: #FFDFB5;
+	color: #CC4E00;
+	border-radius: 8px;
+	border-top: 2px solid #F5AE73;
+	border-left: 2px solid #F5AE73;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.add:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+.add:active {
+	border: none;
+	outline: 2px solid #CC4E00;
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+.delete {
+	padding: 2px 4px;
+	background: #FFDFB5;
+	color: #CC4E00;
+	border-radius: 8px;
+	border-top: 2px solid #F5AE73;
+	border-left: 2px solid #F5AE73;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.delete:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+.delete:active {
+	border: none;
+	outline: 2px solid #CC4E00;
+	text-decoration: line-through;
+	text-decoration-style: solid;
+}
+
+.characters {
+	padding: 2px 4px;
+	background: #FFDFB5;
+	color: #CC4E00;
+	border-radius: 8px;
+	border-top: 2px solid #F5AE73;
+	border-right: 2px solid #F5AE73;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.date {
+	padding: 2px 4px;
+	background: #FFDFB5;
+	color: #CC4E00;
+	border-radius: 8px;
+	border-top: 2px solid #F5AE73;
+	border-right: 2px solid #F5AE73;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.note {
+	background-color: #4d0033;
+	position: relative;
+	padding: 0.6rem 1rem;
+	line-height: 1.3;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	border: 2px solid #F5AE73;
+	border-radius: 12px;
+}
+
+.note-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	margin-bottom: 1rem;
+}
+
+input {
+	font-size: 100%;
+	width: 100%;
+	padding: 0.2em 1rem;
+	border: 2px solid #FFC182;
+	border-radius: 12px;
+	background-color: #FFEFD6;
+	color: #582D1D;
+}
+
+::placeholder {
+	color: #CC4E00;
+	letter-spacing: 1px;
+}
